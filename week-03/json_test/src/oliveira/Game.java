@@ -7,6 +7,14 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+//GSON Serialize and Deserialize article
+//source: https://howtodoinjava.com/gson/gson-serialize-deserialize-json/
+//
+//Reading and Writing to a File using java.nio.file.Files/Path
+//source: https://howtodoinjava.com/java/io/java-read-file-to-string-examples/
+//source: https://howtodoinjava.com/java/io/java-write-to-file/
+//
+
 public class Game {
 
     public Player getPlayer() {
@@ -47,7 +55,7 @@ public class Game {
 
         //handle the exception
         try {
-            jsonString = new String(Files.readAllBytes(Paths.get("player1.json")));
+            jsonString = new String(Files.readAllBytes(Paths.get(fileName)));
         } catch (IOException e) {
             e.printStackTrace();
         }

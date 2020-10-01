@@ -2,5 +2,9 @@
   "name": "Nephi",
   "health": 100,
   "mana": 80,
-  "gold": 1000
+  "gold": 1000,
+  "equipment": {
+    "Sword": 1000,
+    "Shield": 500
+  }
 }

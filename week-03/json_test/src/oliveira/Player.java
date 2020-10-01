@@ -16,12 +16,20 @@ public class Player
 
     @Override
     public String toString() {
-        return "Player{" +
+        String content = "Player{" +
                 "name='" + name + '\'' +
                 ", health=" + health +
                 ", mana=" + mana +
                 ", gold=" + gold +
-                '}';
+                ", equipments={";
+
+        for (Map.Entry<String, Integer> entry : equipment.entrySet()) {
+            content += entry.getKey() + ", " + entry.getValue() + "; ";
+        }
+
+        content += "}";
+
+        return content;
     }
 
     private String name;
