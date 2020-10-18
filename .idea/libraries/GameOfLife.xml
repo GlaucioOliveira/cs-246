@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GameOfLife">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/week-02/GameOfLife.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
